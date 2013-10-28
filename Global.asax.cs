@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using testProject.Infrastructure.Logging;
 
 namespace testProject
 {
@@ -37,6 +38,8 @@ namespace testProject
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+
+            DependencyResolver.Current.GetService<ILogger>().Info("Application started");
         }
     }
 }
