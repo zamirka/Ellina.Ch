@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -9,9 +10,19 @@ namespace testProject.Controllers
 {
     public class HomeController : Controller
     {
-        //
-        // GET: /Home/
+        private readonly DbContext dbContext;
 
+        public HomeController()
+        {
+            try
+            {
+                dbContext = new DataContext();
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
         public ActionResult Index()
         {
             List<User> model = null;
@@ -31,9 +42,15 @@ namespace testProject.Controllers
         }
 
         [HttpPost]
-        public String GetSearchResult(string someText)
+        public string GetSearchResult(string someText)
         {
+            //System.Threading.Thread.Sleep(55000);
             return string.Format("OK for {0}", someText);
+        }
+
+        private User SearchUserByName(string name)
+        {
+            return new User() { id = 1, name = "Dummy" };
         }
 
     }
