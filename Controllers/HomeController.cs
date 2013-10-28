@@ -5,39 +5,46 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using testProject.Models;
+using testProject.Infrastructure.DataAccess;
+using testProject.Infrastructure.Logging;
 
 namespace testProject.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly DbContext dbContext;
+        private readonly ILogger _logger;
+        private readonly IDataContext dataContext;
 
-        public HomeController()
+        public HomeController(ILogger logger)
         {
-            try
-            {
-                dbContext = new DataContext();
-            }
-            catch (Exception ex)
-            {
+            _logger = logger;
+            //try
+            //{
+            //    dataContext = new SqlCEContext();
+            //}
+            //catch (Exception ex)
+            //{
 
-            }
+            //}
         }
         public ActionResult Index()
         {
+            _logger.Info("HomeController.Index() started");
             List<User> model = null;
             try
             {
-                using (var context = new DataContext())
+                using (var ctx = new SqlCEContext())
                 {
-                    model = context.Users.ToList();
+                    model = ctx.Users.ToList();
                 }
             }
             catch (Exception ex)
             {
+                _logger.Error("Error in HomeController.Index()", ex);
                 throw ex;
             }
-            
+
+            _logger.Info("HomeController.Index() ended");
             return View(model);
         }
 

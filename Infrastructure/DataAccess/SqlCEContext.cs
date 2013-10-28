@@ -5,11 +5,11 @@ using System.Linq;
 using System.Web;
 using testProject.Models;
 
-namespace testProject
+namespace testProject.Infrastructure.DataAccess
 {
-    public class DataContext : DbContext
+    public class SqlCEContext : DbContext
     {
-        public DataContext()
+        public SqlCEContext()
         {
         }
 
