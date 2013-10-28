@@ -115,8 +115,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\DataAccess\IDataContext.cs" />
+    <Compile Include="Infrastructure\DataAccess\UserMap.cs" />
     <Compile Include="Infrastructure\Logging\ILogger.cs" />
     <Compile Include="Infrastructure\Logging\NLogLogger.cs" />
+    <Compile Include="Infrastructure\Repositories\IRepository.cs" />
+    <Compile Include="Infrastructure\Repositories\IUnitOfWork.cs" />
+    <Compile Include="Infrastructure\Repositories\Repository.cs" />
+    <Compile Include="Infrastructure\Repositories\UnitOfWork.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

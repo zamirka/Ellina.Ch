@@ -7,12 +7,24 @@ using testProject.Models;
 
 namespace testProject.Infrastructure.DataAccess
 {
-    public class SqlCEContext : DbContext
+    public partial class SqlCEContext : DbContext, IDataContext
     {
-        public SqlCEContext()
+        static SqlCEContext()
         {
+            Database.SetInitializer<SqlCEContext>(null);
+        }
+
+        public SqlCEContext()
+            : base("Name=SqlCEContext")
+        {
+
         }
 
         public DbSet<User> Users { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new UserMap());
+        }
     }
 }

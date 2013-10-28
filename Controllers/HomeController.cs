@@ -18,14 +18,6 @@ namespace testProject.Controllers
         public HomeController(ILogger logger)
         {
             _logger = logger;
-            //try
-            //{
-            //    dataContext = new SqlCEContext();
-            //}
-            //catch (Exception ex)
-            //{
-
-            //}
         }
         public ActionResult Index()
         {
