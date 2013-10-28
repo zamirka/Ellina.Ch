@@ -7,17 +7,21 @@ using System.Web.Mvc;
 using testProject.Models;
 using testProject.Infrastructure.DataAccess;
 using testProject.Infrastructure.Logging;
+using testProject.Infrastructure.Repositories;
 
 namespace testProject.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger _logger;
-        private readonly IDataContext dataContext;
+        private readonly IUnitOfWork _uof;
+        private readonly IRepository<User> _usersRepo;
 
-        public HomeController(ILogger logger)
+        public HomeController(ILogger logger, IUnitOfWork uof)
         {
             _logger = logger;
+            _uof = uof;
+            _usersRepo = _uof.GetRepository<User>();
         }
         public ActionResult Index()
         {
@@ -25,10 +29,7 @@ namespace testProject.Controllers
             List<User> model = null;
             try
             {
-                using (var ctx = new SqlCEContext())
-                {
-                    model = ctx.Users.ToList();
-                }
+                model = _usersRepo.GetAll().ToList();
             }
             catch (Exception ex)
             {

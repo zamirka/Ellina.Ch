@@ -11,6 +11,8 @@ namespace testProject.App_Start
     using Ninject;
     using Ninject.Web.Common;
     using testProject.Infrastructure.Logging;
+    using testProject.Infrastructure.Repositories;
+    using testProject.Infrastructure.DataAccess;
 
     public static class NinjectWebCommon 
     {
@@ -55,6 +57,7 @@ namespace testProject.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind<ILogger>().To<NLogLogger>().InSingletonScope();
+            kernel.Bind<IUnitOfWork>().To<UnitOfWork<SqlCEContext>>().InSingletonScope();
         }        
     }
 }
