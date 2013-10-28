@@ -19,9 +19,16 @@ namespace testProject.Controllers
 
         public HomeController(ILogger logger, IUnitOfWork uof)
         {
-            _logger = logger;
-            _uof = uof;
-            _usersRepo = _uof.GetRepository<User>();
+            try
+            {
+                _logger = logger;
+                _uof = uof;
+                _usersRepo = _uof.GetRepository<User>();
+            }
+            catch (Exception ex)
+            {
+                _logger.Error("Error in HomeController.ctor(ILogger, IUnitOfWork)", ex);
+            }
         }
         public ActionResult Index()
         {
@@ -34,7 +41,6 @@ namespace testProject.Controllers
             catch (Exception ex)
             {
                 _logger.Error("Error in HomeController.Index()", ex);
-                throw ex;
             }
 
             _logger.Info("HomeController.Index() ended");
