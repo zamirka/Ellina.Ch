@@ -1,0 +1,12 @@
+2013-10-29 00:24:48.3578 INFO HomeController.Index() started
+2013-10-29 00:24:50.1480 INFO HomeController.Index() ended
+2013-10-29 00:54:51.7649 INFO Application started
+2013-10-29 00:54:51.9571 INFO HomeController.Index() started
+2013-10-29 00:54:53.4010 INFO HomeController.Index() ended
+2013-10-29 00:56:22.5154 INFO Application started
+2013-10-29 00:56:22.7395 INFO HomeController.Index() started
+2013-10-29 00:56:24.3646 INFO HomeController.Index() ended
+2013-10-29 01:11:15.6059 INFO Application ended
+2013-10-29 02:12:08.4242 INFO Application started
+2013-10-29 02:12:42.5025 INFO HomeController.Index() started
+2013-10-29 02:12:53.4293 INFO HomeController.Index() ended
