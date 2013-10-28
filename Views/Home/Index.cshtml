@@ -1,0 +1,43 @@
+﻿@model List<testProject.Models.User>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<span>Введите имя для поиска: </span>
+<input class="searchText"type="text"/>
+<input type="submit" value="Найти" onclick="search();"/>
+<br />
+<div class="serarchResult"></div>
+
+<p>Содержимое базы:</p>
+<ul style="list-style-type: none;">
+    @if (Model != null)
+    {
+        foreach (var u in Model)
+        {
+            <li>@u.id : @u.name</li>
+        }
+    }  
+</ul>
+
+@section scripts
+{
+    <script src="../../Content/ManualRequest.js"></script>
+    <script>
+        function search() {
+            askServer($('.searchText').val());
+        }
+
+        function askServer(searchText) {
+            sendRequest('/Home/GetSearchResult', callbackResult, { someText: searchText });
+        }
+
+        function callbackResult(data) {
+            alert(data.responseText);
+        }
+
+    </script>
+}
