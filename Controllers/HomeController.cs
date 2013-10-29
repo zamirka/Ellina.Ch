@@ -8,6 +8,7 @@ using testProject.Models;
 using testProject.Infrastructure.DataAccess;
 using testProject.Infrastructure.Logging;
 using testProject.Infrastructure.Repositories;
+using testProject.Infrastructure.Search;
 
 namespace testProject.Controllers
 {
@@ -44,19 +45,41 @@ namespace testProject.Controllers
             }
 
             _logger.Info("HomeController.Index() ended");
+            
             return View(model);
         }
 
         [HttpPost]
-        public string GetSearchResult(string someText)
+        public JsonResult GetSearchResult(string nameToSearch)
         {
-            //System.Threading.Thread.Sleep(55000);
-            return string.Format("OK for {0}", someText);
+            System.Threading.Thread.Sleep(120000);
+            var searchResults = this.SearchUserByName(nameToSearch);
+            return Json(new { items = searchResults.ToArray() });
         }
 
-        private User SearchUserByName(string name)
+        private List<User> SearchUserByName(string name)
         {
-            return new User() { id = 1, name = "Dummy" };
+            _logger.Info("HomeController.SearchUserByName(string) started");
+            List<User> result = null;
+            try
+            {
+                var exactMatch = _usersRepo.GetAll().Where(u => u.name == name).ToList();
+                var partialMatch = _usersRepo.GetAll().Where(u => u.name.Contains(name) && u.name != name).ToList();
+                
+                var userComparer = new SearchUserByNameComparer(name);
+                partialMatch.Sort(userComparer);
+
+                result = new List<User>();
+                result.AddRange(exactMatch);
+                result.AddRange(partialMatch);
+            }
+            catch (Exception ex)
+            {
+                _logger.Error("Error in HomeController.SearchUserByName(string)", ex);
+            }
+            _logger.Info("HomeController.SearchUserByName(string) started");
+            
+            return result;
         }
 
     }

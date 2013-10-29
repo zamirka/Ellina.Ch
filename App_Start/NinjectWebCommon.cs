@@ -57,7 +57,8 @@ namespace testProject.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind<ILogger>().To<NLogLogger>().InSingletonScope();
-            kernel.Bind<IUnitOfWork>().To<UnitOfWork<SqlCEContext>>().InSingletonScope();
+            kernel.Bind<IDataContext>().To<SqlCEContext>().InRequestScope();
+            kernel.Bind<IUnitOfWork>().To<UnitOfWork<SqlCEContext>>().InRequestScope();
         }        
     }
 }

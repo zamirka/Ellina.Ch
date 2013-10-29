@@ -122,11 +122,13 @@
     <Compile Include="Infrastructure\Repositories\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\Repositories\Repository.cs" />
     <Compile Include="Infrastructure\Repositories\UnitOfWork.cs" />
+    <Compile Include="Infrastructure\Search\UserComparer.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Database.sdf" />
+    <Content Include="Content\ajax-loader-large.gif" />
     <Content Include="Scripts\ManualRequest.js" />
     <Content Include="Global.asax" />
     <Content Include="NLog.config">
@@ -168,7 +170,6 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\" />
     <Folder Include="logs\" />
   </ItemGroup>
   <ItemGroup>
@@ -190,7 +191,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>3333</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:59739/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

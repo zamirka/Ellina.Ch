@@ -1,43 +1,90 @@
 ﻿@model List<testProject.Models.User>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Поиск по имени";
 }
+<style>
+    div {
+    width: 400px;
+    height: 768px;
 
-<h2>Index</h2>
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
-<span>Введите имя для поиска: </span>
-<input class="searchText"type="text"/>
-<input type="submit" value="Найти" onclick="search();"/>
-<br />
-<div class="serarchResult"></div>
+    margin: auto;
+}
+</style>
 
-<p>Содержимое базы:</p>
-<ul style="list-style-type: none;">
-    @if (Model != null)
-    {
-        foreach (var u in Model)
+<div class="searchPane">
+    <span>Введите имя для поиска: </span>
+    <input class="searchText"type="text"/>
+    <input type="submit" value="Найти" onclick="search();"/>
+    <br />
+    <p>Содержимое базы:</p>
+    <ul style="list-style-type: none;">
+        @if (Model != null)
         {
-            <li>@u.id : @u.name</li>
-        }
-    }  
-</ul>
+            foreach (var u in Model)
+            {
+                <li>@u.id : @u.name</li>
+            }
+        }  
+    </ul>
+</div>
+<div class="waitPane">
+    <h2>Ожидайте результата запроса …</h2>
+    <img src="../../Content/ajax-loader-large.gif" style="height: 30px;width: 30px;display: block;margin-left: auto;margin-right: auto;"/>
+</div>
+
+<div class="resultsPane">
+    <h2>Результаты поиска</h2>
+    <p>В списке сначала будут выведены точные совпадения, а следом за ними те варианты, в которых встречается искомое значения, отсортированные по позиции искомого значения(чем ближе к началу, тем выше в списке). </p>
+    <ul class="resultList" style="list-style-type: none;">
+        
+    </ul>
+    <br />
+    <input type="submit" value="Заново" onclick="location.reload();"/>
+
+</div>
 
 @section scripts
 {
     <script src="../../Scripts/ManualRequest.js"></script>
     <script>
+        $(document).ready(function() {
+            $('.searchPane').show();
+            $('.waitPane').hide();
+            $('.resultsPane').hide();
+        });
+
         function search() {
+            $('.searchPane').hide();
+            $('.waitPane').show();
+            $('.resultsPane').hide();
+
             askServer($('.searchText').val());
         }
 
         function askServer(searchText) {
-            sendRequest('/Home/GetSearchResult', callbackResult, { someText: searchText });
+            sendRequest('/Home/GetSearchResult', callbackResult, { nameToSearch: searchText });
         }
 
         function callbackResult(data) {
-            alert(data.responseText);
+            $('.searchPane').hide();
+            $('.waitPane').hide();
+            $('.resultsPane').show();
+
+            var json = JSON.parse(data.responseText);
+            ul = $('.resultList');
+
+            $(json.items).each(function(index, item) {
+                ul.append(
+                    $(document.createElement('li')).text(item.id + ' : ' + item.name)
+                );
+            });
         }
 
     </script>
-}
