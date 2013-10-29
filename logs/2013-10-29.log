@@ -222,3 +222,257 @@
 2013-10-29 16:27:54.0796 INFO HomeController.SearchUserByName(string) started
 2013-10-29 16:28:11.7713 INFO HomeController.Index() started
 2013-10-29 16:28:11.8023 INFO HomeController.Index() ended
+2013-10-29 17:21:35.6905 INFO Application started
+2013-10-29 17:21:40.7460 INFO HomeController.Index() started
+2013-10-29 17:21:41.0750 INFO HomeController.Index() ended
+2013-10-29 17:21:45.1356 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:21:45.1356 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:21:45.1656 ERROR Error in HomeController.SearchUserByName(string)
+2013-10-29 17:21:45.1656 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:21:45.2006 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:23:31.2522 INFO Application started
+2013-10-29 17:23:35.2456 INFO HomeController.Index() started
+2013-10-29 17:23:35.6087 INFO HomeController.Index() ended
+2013-10-29 17:23:39.8191 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:23:39.8191 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:23:39.8331 ERROR Error in HomeController.SearchUserByName(string)
+2013-10-29 17:23:39.8331 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:23:39.8711 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:23:57.5419 INFO HomeController.Index() started
+2013-10-29 17:23:57.5809 INFO HomeController.Index() ended
+2013-10-29 17:24:14.8566 INFO HomeController.Index() started
+2013-10-29 17:24:14.8866 INFO HomeController.Index() ended
+2013-10-29 17:24:39.7451 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:24:39.7451 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:24:39.7741 ERROR Error in HomeController.SearchUserByName(string)
+2013-10-29 17:24:39.7741 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:24:39.7961 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:25:28.9380 INFO Application started
+2013-10-29 17:25:29.1120 INFO HomeController.Index() started
+2013-10-29 17:25:29.4491 INFO HomeController.Index() ended
+2013-10-29 17:25:43.1934 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:25:43.1934 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:25:43.2114 ERROR Error in HomeController.SearchUserByName(string)
+2013-10-29 17:25:43.2114 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:25:43.2464 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:26:21.5693 INFO Application started
+2013-10-29 17:26:21.7223 INFO HomeController.Index() started
+2013-10-29 17:26:22.0533 INFO HomeController.Index() ended
+2013-10-29 17:26:43.5125 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:26:43.5125 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:26:43.5355 ERROR Error in HomeController.SearchUserByName(string)
+2013-10-29 17:26:43.5355 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:26:43.5695 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:27:14.5056 INFO Application started
+2013-10-29 17:27:14.6576 INFO HomeController.Index() started
+2013-10-29 17:27:14.9956 INFO HomeController.Index() ended
+2013-10-29 17:27:21.3953 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:27:50.0171 ERROR Error in HomeController.SearchUserByName(string)
+2013-10-29 17:27:50.0171 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:27:52.1293 INFO Application started
+2013-10-29 17:27:52.3063 INFO HomeController.Index() started
+2013-10-29 17:28:10.4092 INFO Application started
+2013-10-29 17:28:10.5762 INFO HomeController.Index() started
+2013-10-29 17:28:40.8452 INFO Application started
+2013-10-29 17:28:41.0122 INFO HomeController.Index() started
+2013-10-29 17:28:57.4489 ERROR Error in HomeController.Index()
+2013-10-29 17:28:57.4489 INFO HomeController.Index() ended
+2013-10-29 17:28:57.4629 ERROR Error in HomeController.Index()
+2013-10-29 17:28:57.4629 INFO HomeController.Index() ended
+2013-10-29 17:28:57.4769 ERROR Error in HomeController.Index()
+2013-10-29 17:28:57.4769 INFO HomeController.Index() ended
+2013-10-29 17:29:35.5387 INFO Application started
+2013-10-29 17:29:35.6657 INFO HomeController.Index() started
+2013-10-29 17:29:36.1877 INFO HomeController.Index() ended
+2013-10-29 17:29:46.4008 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:29:46.4238 ERROR Error in HomeController.SearchUserByName(string)
+2013-10-29 17:29:46.4238 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:30:02.4214 INFO HomeController.Index() started
+2013-10-29 17:30:02.4574 INFO HomeController.Index() ended
+2013-10-29 17:30:05.9377 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:30:05.9527 ERROR Error in HomeController.SearchUserByName(string)
+2013-10-29 17:30:05.9527 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:30:28.5360 INFO Application started
+2013-10-29 17:30:28.7010 INFO HomeController.Index() started
+2013-10-29 17:30:29.0340 INFO HomeController.Index() ended
+2013-10-29 17:31:05.5087 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:31:05.5287 ERROR Error in HomeController.SearchUserByName(string)
+2013-10-29 17:31:05.5287 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:33:43.9859 INFO Application started
+2013-10-29 17:33:48.4048 INFO HomeController.Index() started
+2013-10-29 17:33:48.6519 INFO HomeController.Index() ended
+2013-10-29 17:33:54.4080 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:33:54.4290 ERROR Error in HomeController.SearchUserByName(string)
+2013-10-29 17:33:54.4290 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:34:22.3544 INFO Application started
+2013-10-29 17:34:22.4984 INFO HomeController.Index() started
+2013-10-29 17:34:22.7714 INFO HomeController.Index() ended
+2013-10-29 17:34:29.4024 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:34:29.4234 ERROR Error in HomeController.SearchUserByName(string)
+2013-10-29 17:34:29.4234 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:35:51.3494 INFO HomeController.Index() started
+2013-10-29 17:35:51.3774 INFO HomeController.Index() ended
+2013-10-29 17:36:00.9004 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:36:00.9144 ERROR Error in HomeController.SearchUserByName(string)
+2013-10-29 17:36:03.0604 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:36:27.1094 ERROR Error in HomeController.SearchUserByName(string)
+2013-10-29 17:36:28.7244 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:36:43.4714 INFO HomeController.Index() started
+2013-10-29 17:36:43.4854 INFO HomeController.Index() ended
+2013-10-29 17:36:46.7514 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:37:04.3154 ERROR Error in HomeController.SearchUserByName(string)
+2013-10-29 17:37:04.3154 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:38:11.7214 INFO Application started
+2013-10-29 17:38:11.8584 INFO HomeController.Index() started
+2013-10-29 17:38:12.1984 INFO HomeController.Index() ended
+2013-10-29 17:38:18.1774 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:38:23.9974 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:38:37.2914 INFO HomeController.Index() started
+2013-10-29 17:38:37.2914 INFO HomeController.Index() ended
+2013-10-29 17:38:39.4064 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:38:39.4304 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:38:46.0244 INFO HomeController.Index() started
+2013-10-29 17:38:46.0344 INFO HomeController.Index() ended
+2013-10-29 17:38:48.6854 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:38:48.7074 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:39:07.2964 INFO HomeController.Index() started
+2013-10-29 17:39:07.3064 INFO HomeController.Index() ended
+2013-10-29 17:39:12.2054 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:39:12.2294 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:39:17.6694 INFO HomeController.Index() started
+2013-10-29 17:39:17.6784 INFO HomeController.Index() ended
+2013-10-29 17:39:37.6530 INFO Application started
+2013-10-29 17:39:37.8001 INFO HomeController.Index() started
+2013-10-29 17:39:38.1291 INFO HomeController.Index() ended
+2013-10-29 17:39:47.5440 INFO Application started
+2013-10-29 17:39:47.7691 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:39:48.1911 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:39:56.8880 INFO HomeController.Index() started
+2013-10-29 17:39:56.8980 INFO HomeController.Index() ended
+2013-10-29 17:47:48.7391 INFO Application started
+2013-10-29 17:49:06.9530 INFO Application started
+2013-10-29 17:49:07.0580 INFO HomeController.Index() started
+2013-10-29 17:49:07.5580 INFO HomeController.Index() ended
+2013-10-29 17:49:19.7282 INFO HomeController.GetSearchResult(string) started
+2013-10-29 17:49:19.7282 INFO HomeController.GetSearchResult(string) ended
+2013-10-29 17:49:19.7282 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:49:19.8323 INFO HomeController.SearchUserByName(string) ended
+2013-10-29 17:49:20.7423 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:20.7423 INFO Task is running. Id : fc6f8a61-5ba4-41d1-b73f-4ad921c3b6f1
+2013-10-29 17:49:20.7423 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:49:21.7404 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:21.7404 INFO Task is running. Id : fc6f8a61-5ba4-41d1-b73f-4ad921c3b6f1
+2013-10-29 17:49:21.7404 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:49:22.7565 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:22.7565 INFO Task is running. Id : fc6f8a61-5ba4-41d1-b73f-4ad921c3b6f1
+2013-10-29 17:49:22.7565 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:49:23.7566 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:23.7566 INFO Task is running. Id : fc6f8a61-5ba4-41d1-b73f-4ad921c3b6f1
+2013-10-29 17:49:23.7566 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:49:24.7557 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:24.7557 INFO Task is running. Id : fc6f8a61-5ba4-41d1-b73f-4ad921c3b6f1
+2013-10-29 17:49:24.7557 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:49:25.7568 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:25.7568 INFO Task is running. Id : fc6f8a61-5ba4-41d1-b73f-4ad921c3b6f1
+2013-10-29 17:49:25.7568 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:49:26.7389 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:26.7389 INFO Task is running. Id : fc6f8a61-5ba4-41d1-b73f-4ad921c3b6f1
+2013-10-29 17:49:26.7389 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:49:27.7390 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:27.7390 INFO Task is running. Id : fc6f8a61-5ba4-41d1-b73f-4ad921c3b6f1
+2013-10-29 17:49:27.7390 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:49:28.7391 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:28.7391 INFO Task is running. Id : fc6f8a61-5ba4-41d1-b73f-4ad921c3b6f1
+2013-10-29 17:49:28.7391 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:49:29.7392 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:29.7392 INFO Task is running. Id : fc6f8a61-5ba4-41d1-b73f-4ad921c3b6f1
+2013-10-29 17:49:29.7422 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:49:30.7393 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:30.7403 INFO Task completed. Id : fc6f8a61-5ba4-41d1-b73f-4ad921c3b6f1
+2013-10-29 17:49:30.7403 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:49:30.7403 INFO HomeController.End(string) started
+2013-10-29 17:49:30.7403 INFO HomeController.End(string) ended
+2013-10-29 17:49:44.5607 INFO HomeController.Index() started
+2013-10-29 17:49:44.5627 INFO HomeController.Index() ended
+2013-10-29 17:49:49.8423 INFO HomeController.GetSearchResult(string) started
+2013-10-29 17:49:49.8423 INFO HomeController.GetSearchResult(string) ended
+2013-10-29 17:49:49.8423 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:49:49.8653 INFO HomeController.SearchUserByName(string) ended
+2013-10-29 17:49:50.8544 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:50.8544 INFO Task is running. Id : 0147f6d3-545e-479b-8957-69896e890457
+2013-10-29 17:49:50.8544 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:49:51.8545 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:51.8545 INFO Task is running. Id : 0147f6d3-545e-479b-8957-69896e890457
+2013-10-29 17:49:51.8545 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:49:52.8556 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:52.8556 INFO Task is running. Id : 0147f6d3-545e-479b-8957-69896e890457
+2013-10-29 17:49:52.8556 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:49:53.8547 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:53.8547 INFO Task is running. Id : 0147f6d3-545e-479b-8957-69896e890457
+2013-10-29 17:49:53.8547 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:49:54.8548 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:54.8548 INFO Task is running. Id : 0147f6d3-545e-479b-8957-69896e890457
+2013-10-29 17:49:54.8548 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:49:55.8549 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:55.8549 INFO Task is running. Id : 0147f6d3-545e-479b-8957-69896e890457
+2013-10-29 17:49:55.8549 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:49:56.8550 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:56.8560 INFO Task is running. Id : 0147f6d3-545e-479b-8957-69896e890457
+2013-10-29 17:49:56.8560 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:49:57.8541 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:57.8561 INFO Task is running. Id : 0147f6d3-545e-479b-8957-69896e890457
+2013-10-29 17:49:57.8561 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:49:58.8542 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:58.8542 INFO Task is running. Id : 0147f6d3-545e-479b-8957-69896e890457
+2013-10-29 17:49:58.8542 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:49:59.8553 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:49:59.8553 INFO Task is running. Id : 0147f6d3-545e-479b-8957-69896e890457
+2013-10-29 17:49:59.8553 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:50:00.8544 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:50:00.8544 INFO Task completed. Id : 0147f6d3-545e-479b-8957-69896e890457
+2013-10-29 17:50:00.8544 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:50:00.8544 INFO HomeController.End(string) started
+2013-10-29 17:50:00.8544 INFO HomeController.End(string) ended
+2013-10-29 17:50:05.4328 INFO HomeController.Index() started
+2013-10-29 17:50:05.4428 INFO HomeController.Index() ended
+2013-10-29 17:50:30.0173 INFO HomeController.GetSearchResult(string) started
+2013-10-29 17:50:30.0173 INFO HomeController.GetSearchResult(string) ended
+2013-10-29 17:50:30.0173 INFO HomeController.SearchUserByName(string) started
+2013-10-29 17:50:30.0373 INFO HomeController.SearchUserByName(string) ended
+2013-10-29 17:50:31.0374 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:50:31.0374 INFO Task is running. Id : 4c3f3775-5065-42fa-a995-436e9a8ecce6
+2013-10-29 17:50:31.0374 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:50:32.0375 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:50:32.0375 INFO Task is running. Id : 4c3f3775-5065-42fa-a995-436e9a8ecce6
+2013-10-29 17:50:32.0375 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:50:33.0376 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:50:33.0376 INFO Task is running. Id : 4c3f3775-5065-42fa-a995-436e9a8ecce6
+2013-10-29 17:50:33.0376 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:50:34.0377 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:50:34.0377 INFO Task is running. Id : 4c3f3775-5065-42fa-a995-436e9a8ecce6
+2013-10-29 17:50:34.0377 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:50:35.0368 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:50:35.0368 INFO Task is running. Id : 4c3f3775-5065-42fa-a995-436e9a8ecce6
+2013-10-29 17:50:35.0368 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:50:36.0379 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:50:36.0379 INFO Task is running. Id : 4c3f3775-5065-42fa-a995-436e9a8ecce6
+2013-10-29 17:50:36.0379 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:50:37.0370 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:50:37.0370 INFO Task is running. Id : 4c3f3775-5065-42fa-a995-436e9a8ecce6
+2013-10-29 17:50:37.0370 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:50:38.0371 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:50:38.0371 INFO Task is running. Id : 4c3f3775-5065-42fa-a995-436e9a8ecce6
+2013-10-29 17:50:38.0371 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:50:39.0372 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:50:39.0372 INFO Task is running. Id : 4c3f3775-5065-42fa-a995-436e9a8ecce6
+2013-10-29 17:50:39.0372 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:50:40.0373 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:50:40.0373 INFO Task is running. Id : 4c3f3775-5065-42fa-a995-436e9a8ecce6
+2013-10-29 17:50:40.0403 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:50:41.0374 INFO HomeController.IsTaskComplete(string) started
+2013-10-29 17:50:41.0374 INFO Task completed. Id : 4c3f3775-5065-42fa-a995-436e9a8ecce6
+2013-10-29 17:50:41.0374 INFO HomeController.IsTaskComplete(string) ended
+2013-10-29 17:50:41.0374 INFO HomeController.End(string) started
+2013-10-29 17:50:41.0374 INFO HomeController.End(string) ended
+2013-10-29 17:50:46.2639 INFO HomeController.Index() started
+2013-10-29 17:50:46.2639 INFO HomeController.Index() ended

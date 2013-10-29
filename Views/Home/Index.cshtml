@@ -59,6 +59,24 @@
             $('.waitPane').hide();
             $('.resultsPane').hide();
         });
+        
+        var intervalId;
+        var taskId;
+
+        function requestProcessing() {
+            sendRequest('@Url.Action("IsTaskComplete", "Home")', callbackStatus, { id: taskId });
+        }
+        
+        function callbackStatus(data) {
+            var json = JSON.parse(data.responseText);
+            if (json.status == 'done') {
+                clearInterval(intervalId);
+                sendRequest('@Url.Action("End", "Home")', processResult, { id: taskId });
+            } else if (json.status == 'unknown_task') {
+                clearInterval(intervalId);
+                location.reload();
+            }
+        }
 
         function search() {
             $('.searchPane').hide();
@@ -69,10 +87,16 @@
         }
 
         function askServer(searchText) {
-            sendRequest('/Home/GetSearchResult', callbackResult, { nameToSearch: searchText });
+            sendRequest('@Url.Action("GetSearchResult", "Home")', startCallback, { nameToSearch: searchText });
+        }
+        
+        function startCallback(data) {
+            var json = JSON.parse(data.responseText);
+            taskId = json.taskId;
+            intervalId = setInterval(requestProcessing, 1000);
         }
 
-        function callbackResult(data) {
+        function processResult(data) {
             $('.searchPane').hide();
             $('.waitPane').hide();
             $('.resultsPane').show();
