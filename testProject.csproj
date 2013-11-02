@@ -129,6 +129,7 @@
   <ItemGroup>
     <Content Include="App_Data\Database.sdf" />
     <Content Include="Content\ajax-loader-large.gif" />
+    <Content Include="Scripts\jqProgressWidjet.js" />
     <Content Include="Scripts\ManualRequest.js" />
     <Content Include="Global.asax" />
     <Content Include="NLog.config">

@@ -37,6 +37,8 @@
 <div class="waitPane">
     <h2>Ожидайте результата запроса …</h2>
     <img src="../../Content/ajax-loader-large.gif" style="height: 30px;width: 30px;display: block;margin-left: auto;margin-right: auto;"/>
+    <br />
+    <div class="progress"></div>
 </div>
 
 <div class="resultsPane">
@@ -52,12 +54,14 @@
 
 @section scripts
 {
-    <script src="../../Scripts/ManualRequest.js"></script>
+    <script src="@Url.Content("~/Scripts/ManualRequest.js")"></script>
+    <script src="@Url.Content("~/Scripts/jqProgressWidjet.js")"></script>
     <script>
         $(document).ready(function() {
             $('.searchPane').show();
             $('.waitPane').hide();
             $('.resultsPane').hide();
+            window.bar = $('.progress').progressbar();
         });
         
         var intervalId;
@@ -72,12 +76,13 @@
             if (json.status == 'done') {
                 clearInterval(intervalId);
                 sendRequest('@Url.Action("End", "Home")', processResult, { id: taskId });
+                window.bar.progressbar('value', 100);
             } else if (json.status == 'unknown_task') {
                 clearInterval(intervalId);
                 location.reload();
             }
+            window.bar.progressbar('value', window.bar.progressbar('option', 'value') + 10);
         }
-
         function search() {
             $('.searchPane').hide();
             $('.waitPane').show();
