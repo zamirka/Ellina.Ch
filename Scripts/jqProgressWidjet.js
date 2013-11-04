@@ -7,16 +7,7 @@
         this.element
         .addClass('progressbar')
         .text(progress);
-    },
-
-    value: function (value) {
-        if (typeof (value) === 'undefined' || value === undefined) {
-            return this.options.value;
-        }
-
-        this.options.value = this._constrain(value);
-        var progress = this.options.value + '%';
-        this.element.text(progress);
+        this.refresh();
     },
 
     _constrain: function (value) {
@@ -44,5 +35,8 @@
     refresh: function () {
         var progress = this.options.value + '%';
         this.element.text(progress);
+        if (this.options.value == 100) {
+            this._trigger('complete', null, { value: 100 });
+        }
     }
 });

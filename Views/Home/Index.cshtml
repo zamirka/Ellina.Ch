@@ -8,12 +8,11 @@
     width: 400px;
     height: 768px;
 
-    position: absolute;
+    //position: absolute;
     top:0;
     bottom: 0;
     left: 0;
     right: 0;
-
     margin: auto;
 }
 </style>
@@ -61,7 +60,14 @@
             $('.searchPane').show();
             $('.waitPane').hide();
             $('.resultsPane').hide();
-            window.bar = $('.progress').progressbar();
+            window.bar = $('.progress').progressbar({
+                complete: function (event, data) {
+                    alert('Callback triggered');
+                }
+            })
+            .bind('progressbarcomplete', function (event, data) {
+                alert('Native event. The progress bar value is ' + data.value);
+            });
         });
         
         var intervalId;
@@ -76,12 +82,12 @@
             if (json.status == 'done') {
                 clearInterval(intervalId);
                 sendRequest('@Url.Action("End", "Home")', processResult, { id: taskId });
-                window.bar.progressbar('value', 100);
+                //window.bar.progressbar('option', 'value', 100);
             } else if (json.status == 'unknown_task') {
                 clearInterval(intervalId);
                 location.reload();
             }
-            window.bar.progressbar('value', window.bar.progressbar('option', 'value') + 10);
+            window.bar.progressbar('option', 'value', window.bar.progressbar('option', 'value') + 10);
         }
         function search() {
             $('.searchPane').hide();
