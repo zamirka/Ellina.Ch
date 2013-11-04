@@ -56,19 +56,22 @@
     <script src="@Url.Content("~/Scripts/ManualRequest.js")"></script>
     <script src="@Url.Content("~/Scripts/jqProgressWidjet.js")"></script>
     <script>
-        $(document).ready(function() {
+        var bar;
+
+        $(document).ready(function () {
             $('.searchPane').show();
             $('.waitPane').hide();
             $('.resultsPane').hide();
-            window.bar = $('.progress').progressbar({
+            bar = $('.progress').progressbar({
                 complete: function (event, data) {
-                    alert('Callback triggered');
+                    //alert('Callback triggered');
                 }
             })
             .bind('progressbarcomplete', function (event, data) {
-                alert('Native event. The progress bar value is ' + data.value);
-            });
-        });
+                //alert('Native event. The progress bar value is ' + data.value);
+            })
+        })
+        .data('progressbar');
         
         var intervalId;
         var taskId;
@@ -87,7 +90,7 @@
                 clearInterval(intervalId);
                 location.reload();
             }
-            window.bar.progressbar('option', 'value', window.bar.progressbar('option', 'value') + 10);
+            bar.progressbar('option', 'value', option('value') + 10);
         }
         function search() {
             $('.searchPane').hide();

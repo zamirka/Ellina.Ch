@@ -38,5 +38,12 @@
         if (this.options.value == 100) {
             this._trigger('complete', null, { value: 100 });
         }
+    },
+
+    _destroy: function () {
+        this.element
+            .removeClass('progressbar')
+        .text('')
+        .unbind();
     }
 });
